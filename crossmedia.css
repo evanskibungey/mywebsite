@@ -1,0 +1,398 @@
+body {
+
+    font: 15px/1.5 Arial,Helvetica,sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background: rgba(2, 11, 53, 0.2);
+/*background: url("images/Jellyfish.jpg") no-repeat;
+    background-size: cover*/;
+}
+
+ul{margin:0;
+    padding: 0;
+
+}
+#sideshow{
+    padding-top: 20px;
+    margin-top: 10px;
+}
+.dark{
+    padding: 15px;
+    background: #35424a;
+    color: #ffffff;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.container {
+    width: 88%;
+    margin: auto;
+    overflow: hidden;}
+/*header*/
+
+header{
+    background: #35424a;
+    color:#ffff;
+    margin-top: 0px;
+    min-height: 70px;
+    border-bottom: #e8491d 2px solid;
+}
+header a{
+  text-decoration: none;
+   text-transform: uppercase;
+   color: #ffffff;
+    font-size: 16px;
+
+}
+#boxes h3{
+    color: white;
+    border-bottom: solid  #e8491d 2px ;
+
+}
+#boxes h3:hover{
+    background-color:  #35424a;
+    border: #716ccc 2px solid;
+}
+#boxes p:hover{
+
+     background: rgba(232, 59, 56, 0.4);
+}
+
+
+
+header li{
+    display: inline-block;
+    float:left;
+    padding: 0 20px 0 20px;
+}
+
+header #brading{ float: left;
+}
+header #brading h1{ margin: 0;
+
+}
+header nav{
+    float:right;
+    margin-top: 10px;
+}
+header .highlight, header .current a{
+    color:#e8491d;
+}
+
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+ }
+
+ .button_1{
+     height: 30px;
+     background: #e8491d;
+        border: 0;
+     padding-left: 20px;
+     padding-right: 20px;
+     color: #ffffff;
+ }
+ #showcase{
+     min-height: 480px;
+     background: url("images/Jellyfish.jpg");
+     text-align: center;
+     color: #fff3cd;
+ }
+
+ #showcase h1{
+     margin-top: 100px;
+     margin-bottom: 10px;
+     font-size: 55px;
+ }
+
+ #showcase p{
+     padding: 20px;
+ }
+ #newsletter{
+     padding: 15px;
+      background: c;
+ }
+
+#newsletter h1{float: left}
+
+#newsletter form{
+    float: right;
+    margin-top: 12px;
+}
+#newsletter input [type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 25px;
+
+}
+#boxes{
+    margin-top: 28px;
+}
+#boxes .box{
+    float: left;
+    width:30%;
+    text-align: center;
+    padding: 10px;
+}
+#boxes .box img{
+    width: 98px;
+}
+
+/*slidebar*/
+
+aside#sildebar{
+    float: right;
+    width: 30%;
+    margin-top: 18px;
+}
+aside#sildebar .quote input,aside#sildebar .quote textarea{
+    width: 99%;
+    padding: 5px;
+}
+article#main-col{
+    float:left ;
+    width: 65%;
+}
+
+/*services*/
+ul#services li{
+    list-style: none;
+    padding: 20px;
+    border:#e8491d 2px solid;
+    margin-bottom: 6px;
+    background:white;
+}
+
+
+
+#footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #e8491d;
+}
+
+
+
+
+/*Media Queries */
+
+@media( max-width: 768px){
+    header#brading
+    header nav,
+    header nav li ,
+    header nav li a,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sildebar
+    {
+        list-style: none  ;
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+header{
+    padding-bottom: 10px;
+}
+#showcase h1{
+    margin-top: 40px;
+}
+#newsletter button, .quote button{
+    display: block;
+    width: 100%;
+}
+#newsletter form input[type="email"],.quote input .quote textarea{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+
+}
+
+.content{
+    margin: auto;
+    width:190px;
+    perspective: 1000px;
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 3px;
+
+}
+.content-carrousel{
+    width: 100%;
+    position: absolute;
+    float: right;
+    animation: rotar 15s infinite linear;
+    transform-style: preserve-3d;
+}
+.content-carrousel:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+.content-carrousel figure{
+    width: 100%;
+    height: 120px;
+    border: 1px solid #4d444d;
+    overflow: hidden;
+    position: absolute;
+
+}
+
+.content-carrousel figure:nth-child(1){
+    transform: rotateY(0deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(2){
+    transform: rotateY(40deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(3){
+    transform: rotateY(80deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(4){
+    transform: rotateY(120deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(5){
+    transform: rotateY(160deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(6){
+    transform: rotateY(200deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(7){
+    transform: rotateY(240deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(8){
+    transform: rotateY(280deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(9){
+    transform: rotateY(320deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(8){
+    transform: rotateY(280deg) translateZ(300px);
+}
+.shadow{
+
+    position: relative;
+    box-shadow: 0px 0px 20px 0px #000;
+    border-radius:2px;
+}
+.content-carrousel img{
+    image-rendering: auto;
+    transition: all 300ms;
+    width: 100%;
+    height: 100%;
+}
+.content-carrousel img:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+@keyframes rotar {
+    from { transform: rotateY(0deg);
+    }to{
+         transform: rotateY(360deg)
+     }
+
+}
+
+/*section one*/
+
+.box span{
+    font-style: italic;
+    font-size: 26px;
+}
+.box img{
+    border-radius: 70px;
+}
+#three{
+    background:url("images/sunrise.jpg")no-repeat center;
+    background-size: cover;
+}
+#three .box {
+    width: 750px;
+    background: rgba(2, 11, 53, 0.5);
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 0px;
+    color: white;
+    font-family: 'Century Gothic' sans-serif;
+}
+
+.box img:hover {
+    background-color: #ffe8a1;
+}
+
+.box h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 100;
+
+}
+
+.box h5 {
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 100;
+
+}
+
+.box p {
+    text-align: justify;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.box li {
+    display: inline-block;
+    margin: 6px;
+    list-style: none;
+
+}
+
+.box li a {
+    color: white;
+    text-decoration: none;
+    /*font-size: 70px ;*/
+    transition: all ease-in-out 250s;
+}
+
+/* #three .box h3 {
+     border-bottom: 2px dotted #e8ffc1;
+     width: 50%;
+     font-size: 37px;
+     font-family: monospace, monospace;
+ }*/
+#sideshow{height: 100px;}
+.box p{
+    font-style: normal;
+    font-size: 18px;
+}
+.box h4{
+    color: #6cffcb;
+    font-style: italic;
+}
+.box span{
+    color: #6cffcb;
+    font-style: italic;
+    font-size: 25px;
+}
+
+#form .contact{
+    text-align: center;
+    background: #fff3cd;
+    width: 100%;
+    border: 2px #e8491d solid;
+    padding-right: 10px;
+
+
+}
+#form p{
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 2px solid red;
+
+}
